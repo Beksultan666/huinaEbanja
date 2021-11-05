@@ -1,0 +1,76 @@
+/* ============================== Zeroing ============================== */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+/* ===================================================================== */
+
+body{
+    font-family: 'Fira Code', sans-serif; /* "Имя шрифта", "Имя шрифта", тип шрифта */
+    font-size: 18px; /* размер шрифта */
+}
+.font-size{
+    font-size: 30px; /* размер шрифта */
+}
+.italic{
+    font-style: italic; /* стиль  шрифта */
+    font-size: 18px; /* размер шрифта */
+}
+.font-weight{
+    font-weight: 700; /* насыщенность шрифта */
+}
+.color{
+    color: #f80000; /* цвет текста */
+}
+.text-align{
+    text-align: center; /* Выравнивание текста по центру */
+    text-align: right; /* Выравнивание текста по правому краю */
+    text-align-last: left; /* Выравнивание текста по левому краю. */
+}
+.text-decoration{
+    text-decoration: none; /* Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию */
+    text-decoration: overline; /* Создает перечеркнутый текст */
+    text-decoration: underline; /* Устанавливает подчеркнутый текст */
+    text-decoration: line-through; /* Создает перечеркнутый текст */
+}
+.text-shadow{
+    text-shadow: 1px 1px 1px blue; /* горизонтальное_смещение вертикальное_смещение размер цвет; Добавляет тень к тексту. */
+}
+.text-transform{
+    text-transform: uppercase; /* Все слова пишутся с большими буквами */
+    text-transform: lowercase; /* Все слова пишутся с маленькими буквами */
+    text-transform: capitalize; /* Все слова первой буквы становятся большими */
+}
